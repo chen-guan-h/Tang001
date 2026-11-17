@@ -14,7 +14,7 @@
 @keyframes btG{50%{box-shadow:0 0 34px rgba(255,200,110,.6)}}</style>
 <script>(function(){var B=window.BOOT={p:0,g:30,done:false},T=['Wilson〈行政的研究〉（1887）：政治與行政分立。','Simon：人只有「有限理性」，決策求「滿意」而非最佳。','Weber 理想型官僚：依法辦事、層級節制、專業分工、不講人情。','新公共管理（NPM）：引進市場機制，把民眾當顧客。','Denhardt 新公共服務：政府是「服務」而不是「掌舵」。','Lindblom 漸進主義：政策是「漸進調適的科學」。'],ti=Math.floor(Math.random()*T.length);try{var WT=JSON.parse(localStorage.getItem('court_wrongtips')||'[]');if(WT&&WT.length){T=WT.sort(function(){return Math.random()-0.5;});ti=0;}}catch(e){}
 window.bootP=function(g,m){if(g>B.g)B.g=g;if(m){var e=document.getElementById('bootMsg');if(e)e.textContent=m;}};
-function tip(){var e=document.getElementById('bootTip');if(e)e.textContent='📜 '+T[ti%T.length];ti++;}tip();var iv=setInterval(tip,4200);
+var tp=0,iv=0;function tip(){if(B.done)return;var e=document.getElementById('bootTip'),P=String(T[ti%T.length]).split('\u0001'),x=P[tp]||'';if(e)e.textContent=tp?x:'📜 '+x;tp++;if(tp>=P.length){tp=0;ti++;}iv=setTimeout(tip,Math.min(9000,Math.max(4200,x.length*110)));}tip();
 (function tick(){var b=document.getElementById('bootBar');if(b){var cap=B.g>=100?100:B.g-1;B.p+=Math.max(0,(cap-B.p))*0.03+(B.p<cap?0.02:0);b.style.width=Math.min(100,B.p)+'%';}if(!B.done)requestAnimationFrame(tick);})();
 // 載入器：頁面本身很小、立刻顯示；三個大檔同時下載、顯示真實進度，再依序執行（失敗就改用一般載入）
 window.BOOTL=function(F){var n=F.length,pr=[],tx=[],nx=0,bad=false,tot=0;F.forEach(function(f){tot+=f.s;pr.push(0);});
@@ -430,5 +430,5 @@ table.rep th{color:var(--seal);font-weight:700;white-space:nowrap}
 <section class="card" id="card" hidden aria-live="polite"><button class="x" id="cardX" aria-label="關閉">×</button><button class="mn" id="cardMin" aria-label="收合" hidden>▾</button><div id="cardBody"></div></section>
 <div id="curtain" aria-hidden="true"></div>
 <div id="hurtV" aria-hidden="true"></div>
-<div id="verTag" style="position:fixed;left:6px;bottom:calc(4px + env(safe-area-inset-bottom,0px));z-index:5;font:10px sans-serif;color:rgba(255,240,210,.45);pointer-events:none">v112 · 11/17 15:29</div>
-<script>BOOTL([{u:"tang-data1.js?v=51d5152b",s:11371552,m:"載入宮殿與山水……"},{u:"tang-data2.js?v=da711166",s:8431409,m:"召集文武百官……"},{u:"tang-main.js?v=747938aa",s:20310811,m:"御膳房備膳、整理奏摺……"}])</script>
+<div id="verTag" style="position:fixed;left:6px;bottom:calc(4px + env(safe-area-inset-bottom,0px));z-index:5;font:10px sans-serif;color:rgba(255,240,210,.45);pointer-events:none">v113 · 11/17 16:09</div>
+<script>BOOTL([{u:"tang-data1.js?v=51d5152b",s:11371552,m:"載入宮殿與山水……"},{u:"tang-data2.js?v=da711166",s:8431409,m:"召集文武百官……"},{u:"tang-main.js?v=afedfc6c",s:20315744,m:"御膳房備膳、整理奏摺……"}])</script>
